@@ -1,0 +1,19 @@
+﻿<Window x:Class="EmployeeWageManager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EmployeeWageManager"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="200" Width="500"
+        Loaded="Window_Loaded">
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <ComboBox x:Name="employeeCbx" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" SelectedIndex="0" Height="50" HorizontalAlignment="Left" SelectionChanged="employeeCbx_SelectionChanged"/>
+            <ComboBox x:Name="employeeNameCbx" SelectedIndex="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="50" Margin="5,0,0,0"/>
+            <Button Content="Calculate Wage" Margin ="5,0,0,0" Width="100" Height="50" Click="Button_Click"/>
+            <Label Content="Employee Wage" VerticalAlignment="Center" FontSize="20"/>
+            <Label x:Name="resultlbl" Content ="0 $" Width="100" VerticalAlignment="Center" FontSize="20"/>
+        </StackPanel>
+    </Grid>
+</Window>
